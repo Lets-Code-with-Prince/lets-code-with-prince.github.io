@@ -8,7 +8,7 @@ let colors = ['darkBlue', 'darkGreen', 'darkMagenta', 'red', 'black', 'salmon', 
 document.getElementById('main').style.display = 'none';
 
 
-
+// Setting interval for repeating code every 1000ms:
 setInterval(() => {
     let loadEle = document.getElementById('loader');
     loadEle.innerHTML = `Loading page in ${z} seconds...`
@@ -19,13 +19,7 @@ setInterval(() => {
 }, 1000);
 
 
-
-
-
-
-
-
-
+// Setting timeout for using function only one time:
 setTimeout(() => {
     document.getElementById('main').style.display = 'flex';
     for (let i = 0; i < cities.length; i++) {
